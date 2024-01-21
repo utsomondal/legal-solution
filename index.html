@@ -15,26 +15,74 @@
 <body>
     <header class="container mx-auto lg:mt-4 md:mt-2">
         <!-- navbar section -->
-        <div class="navbar">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <!-- 1 -->
+                            <li>
+                                <a>Services</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <details>
+                                    <summary>Cases</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <details>
+                                    <summary>Blog</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <details>
+                                    <summary>Contact Us</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a href="index.html"><img src="images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <!-- 1 -->
                         <li>
-                            <a>Services</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
                         </li>
                         <!-- 2 -->
                         <li>
@@ -68,58 +116,29 @@
                         </li>
                     </ul>
                 </div>
-                <a href="index.html"><img src="images/logo2.png" alt=""></a>
+                <div class="navbar-end">
+                    <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <!-- 1 -->
-                    <li>
-                        <details>
-                            <summary>Services</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <!-- 2 -->
-                    <li>
-                        <details>
-                            <summary>Cases</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <!-- 3 -->
-                    <li>
-                        <details>
-                            <summary>Blog</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <!-- 4 -->
-                    <li>
-                        <details>
-                            <summary>Contact Us</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
-            </div>
-        </div>
+        </nav>
         <!-- banner section -->
+        <section class="lg:my-12 md:my-5  p-3">
+            <div class="hero rounded-lg"
+                style="background-image: url('images/banner.png'); background-size: cover; background-position: center; border-radius: 8px;">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="lg:py-28 lg:px-60">
+                        <h1 class="mb-5 lg:text-5xl text-2xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                        <p class="mb-5 text-wrap font-medium">There are many variations of passages of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected humour.</p>
+                        <div class="text-center lg:flex block items-center justify-center gap-4 lg:space-y-0 space-y-4">
+                            <input type="text" placeholder="Search your services" class="focus:text-gray-950 outline-none p-5 rounded-lg lg:w-1/2 md:w-3/4 w-full">
+                            <input class="lg:w-1/4 md:w-3/4 w-full cursor-pointer font-bold rounded-lg bg-[#B68C5A] text-white p-5" type="button" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
